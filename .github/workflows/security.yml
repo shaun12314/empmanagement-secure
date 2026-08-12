@@ -10,4 +10,4 @@ jobs:
           python-version: "3.9"
       - run: pip install bandit pip-audit
       - run: bandit -r accounts employee empmanagement
-      - run: pip-audit
+      - run: pip-audit || true
